@@ -45,7 +45,7 @@ class App extends Component {
       <div className='tc'>
         <Header count={this.state.count}/>
         <SearchBox searchChange={onSearchChange}/>
-        <Scroll>
+        <Scroll className='tc'>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
               <CardList robots={filteredRobots} />
